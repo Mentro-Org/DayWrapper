@@ -1,0 +1,60 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorBackground"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvUI"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:drawableStart="@drawable/drawable_ui"
+            android:drawableEnd="@drawable/drawable_arrow"
+            android:drawablePadding="9.95dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/settings_user_interface"
+            android:textAppearance="?android:attr/android:textAppearance" />
+
+        <TextView
+            android:id="@+id/tvNotifications"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:drawableStart="@drawable/drawable_notifications"
+            android:drawableEnd="@drawable/drawable_arrow"
+            android:drawablePadding="9.95dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/settings_notifications"
+            android:textAppearance="?android:attr/android:textAppearance" />
+
+        <TextView
+            android:id="@+id/tvDateAndTime"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:drawableStart="@drawable/drawable_time"
+            android:drawableEnd="@drawable/drawable_arrow"
+            android:drawablePadding="9.95dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/settings_date_and_time"
+            android:textAppearance="?android:attr/android:textAppearance" />
+
+
+    </LinearLayout>
+</ScrollView>
