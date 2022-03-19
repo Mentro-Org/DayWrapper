@@ -91,7 +91,6 @@ class MainActivity : BaseActivity() {
 
         showChangelogActivity()
         showRecyclerViewAnimation()
-        showRateThisAppDialog()
         createItemTouchHelper()
         initListeners()
         initCallbacks()
