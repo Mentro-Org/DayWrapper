@@ -281,6 +281,7 @@ class MainActivity : BaseActivity() {
                         .duration(300)
                         .go { startActivity(intent) }
             } else {
+                toast("Hey!, I'm a Fab")
                 val position = mAdapter.itemCount
                 val intent = Intent(this, AddTaskActivity::class.java)
                 intent.putExtra("position", position)
