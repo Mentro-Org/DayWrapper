@@ -26,6 +26,7 @@ import daio.io.dresscode.dressCodeStyleId
 import daio.io.dresscode.matchDressCode
 import kotlinx.android.synthetic.main.activity_search.*
 import kotterknife.bindView
+import java.lang.RuntimeException
 
 class SearchActivity : BaseActivity(), SearchView.OnQueryTextListener {
     private val mRecyclerView: RecyclerView by bindView(R.id.rvSearchResultsList)
@@ -37,6 +38,8 @@ class SearchActivity : BaseActivity(), SearchView.OnQueryTextListener {
         matchDressCode()
         setContentView(R.layout.activity_search)
         initToolbar()
+
+        throw RuntimeException("Find me buddy xD")
 
         if (intent.getBooleanExtra("isShortcut", false)) {
             PreferenceHelper.getInstance().init(applicationContext)

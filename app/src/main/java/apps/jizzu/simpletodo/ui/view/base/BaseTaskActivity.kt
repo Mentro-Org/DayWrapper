@@ -57,11 +57,8 @@ abstract class BaseTaskActivity : BaseActivity(), DatePickerDialog.OnDateSetList
 
         tvTaskNote.setOnClickListener {
             hideKeyboard(mTitleEditText)
-            startActivityForResult(Intent(this, TaskNoteActivity::class.java).putExtra("note",
-                    tvTaskNote.text.toString()), 1)
         }
         tvTaskReminder.setOnClickListener {
-            hideKeyboard(mTitleEditText)
             showDatePickerDialog()
         }
         ivDeleteTaskReminder.setOnClickListener {
